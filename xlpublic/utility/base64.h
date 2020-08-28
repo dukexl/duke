@@ -4,8 +4,8 @@
 // Created          : 2020-8-28
 // Description      : Base64 加解密
 // ***********************************************************************
-#ifndef BASE64_H
-#define BASE64_H
+#ifndef XL_BASE64_H
+#define XL_BASE64_H
 #include <string>
 namespace XL {
 	namespace UTILITY
@@ -28,4 +28,4 @@ namespace XL {
 	}
 }
 
-#endif  /* ZL_BASE64_H */
+#endif  /* XL_BASE64_H */
