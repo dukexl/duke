@@ -119,13 +119,11 @@ int main(int agrc, char **argv)
             perror("select failure\n");
             continue;
         }
-
         else if (ret == 0)
         {
             printf("time out!");
             continue;
         }
-
         else
         {
             if (FD_ISSET(0, &ser_fdset)) //标准输入是否存在于ser_fdset集合中（也就是说，检测到输入时，做如下事情）
