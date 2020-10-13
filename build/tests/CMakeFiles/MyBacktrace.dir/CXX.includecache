@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/learngit/xl_public/tests/backtrace.cpp
+stdio.h
+-
+signal.h
+-
+execinfo.h
+-
+stdlib.h
+-
+

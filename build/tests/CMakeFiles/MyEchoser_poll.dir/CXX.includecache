@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/learngit/xl_public/tests/echoser_poll.cpp
+unistd.h
+-
+sys/types.h
+-
+fcntl.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+signal.h
+-
+sys/wait.h
+-
+poll.h
+-
+stdlib.h
+-
+stdio.h
+-
+errno.h
+-
+string.h
+-
+vector
+-
+iostream
+-
+

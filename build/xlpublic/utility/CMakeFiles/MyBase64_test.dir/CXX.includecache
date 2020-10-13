@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.cpp
+base64.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.h
+string.h
+-
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.h
+string
+-
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/test/base64_test.cpp
+../base64.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.h
+iostream
+-
+string
+-
+

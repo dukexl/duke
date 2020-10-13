@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/md5.cpp
+md5.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/md5.h
+stdio.h
+-
+string.h
+-
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/md5.h
+string
+-
+iostream
+-
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/test/md5_test.cpp
+../md5.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/md5.h
+iostream
+-
+string
+-
+

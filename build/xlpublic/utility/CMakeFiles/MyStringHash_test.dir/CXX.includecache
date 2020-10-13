@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.cpp
+stringhash.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/test/stringhash_test.cpp
+../stringhash.h
+/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+iostream
+-
+string
+-
+
