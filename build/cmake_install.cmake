@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/learngit/xl_public
+# Install script for directory: /mnt/hgfs/source/xl_public
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/hgfs/learngit/xl_public/build/examples/cmake_install.cmake")
-  include("/mnt/hgfs/learngit/xl_public/build/tests/cmake_install.cmake")
-  include("/mnt/hgfs/learngit/xl_public/build/xlpublic/cmake_install.cmake")
+  include("/mnt/hgfs/source/xl_public/build/examples/cmake_install.cmake")
+  include("/mnt/hgfs/source/xl_public/build/tests/cmake_install.cmake")
+  include("/mnt/hgfs/source/xl_public/build/xlpublic/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/hgfs/learngit/xl_public/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/hgfs/source/xl_public/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

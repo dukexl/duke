@@ -63,10 +63,10 @@ RM = /home/xuli/build/cmake-3.17.1-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/learngit/xl_public
+CMAKE_SOURCE_DIR = /mnt/hgfs/source/xl_public
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/learngit/xl_public/build
+CMAKE_BINARY_DIR = /mnt/hgfs/source/xl_public/build
 
 # Include any dependencies generated for this target.
 include xlpublic/utility/CMakeFiles/MyBase64_test.dir/depend.make
@@ -79,29 +79,29 @@ include xlpublic/utility/CMakeFiles/MyBase64_test.dir/flags.make
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o: xlpublic/utility/CMakeFiles/MyBase64_test.dir/flags.make
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o: ../xlpublic/utility/base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/learngit/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyBase64_test.dir/base64.cpp.o -c /mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/source/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o"
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyBase64_test.dir/base64.cpp.o -c /mnt/hgfs/source/xl_public/xlpublic/utility/base64.cpp
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyBase64_test.dir/base64.cpp.i"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.cpp > CMakeFiles/MyBase64_test.dir/base64.cpp.i
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/source/xl_public/xlpublic/utility/base64.cpp > CMakeFiles/MyBase64_test.dir/base64.cpp.i
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyBase64_test.dir/base64.cpp.s"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/learngit/xl_public/xlpublic/utility/base64.cpp -o CMakeFiles/MyBase64_test.dir/base64.cpp.s
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/source/xl_public/xlpublic/utility/base64.cpp -o CMakeFiles/MyBase64_test.dir/base64.cpp.s
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o: xlpublic/utility/CMakeFiles/MyBase64_test.dir/flags.make
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o: ../xlpublic/utility/test/base64_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/learngit/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o -c /mnt/hgfs/learngit/xl_public/xlpublic/utility/test/base64_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/source/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o"
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o -c /mnt/hgfs/source/xl_public/xlpublic/utility/test/base64_test.cpp
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/learngit/xl_public/xlpublic/utility/test/base64_test.cpp > CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/source/xl_public/xlpublic/utility/test/base64_test.cpp > CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/learngit/xl_public/xlpublic/utility/test/base64_test.cpp -o CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/source/xl_public/xlpublic/utility/test/base64_test.cpp -o CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s
 
 # Object files for target MyBase64_test
 MyBase64_test_OBJECTS = \
@@ -115,8 +115,8 @@ bin/MyBase64_test: xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o
 bin/MyBase64_test: xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o
 bin/MyBase64_test: xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make
 bin/MyBase64_test: xlpublic/utility/CMakeFiles/MyBase64_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/learngit/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/MyBase64_test"
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyBase64_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/source/xl_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/MyBase64_test"
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyBase64_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/build: bin/MyBase64_test
@@ -124,10 +124,10 @@ xlpublic/utility/CMakeFiles/MyBase64_test.dir/build: bin/MyBase64_test
 .PHONY : xlpublic/utility/CMakeFiles/MyBase64_test.dir/build
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/clean:
-	cd /mnt/hgfs/learngit/xl_public/build/xlpublic/utility && $(CMAKE_COMMAND) -P CMakeFiles/MyBase64_test.dir/cmake_clean.cmake
+	cd /mnt/hgfs/source/xl_public/build/xlpublic/utility && $(CMAKE_COMMAND) -P CMakeFiles/MyBase64_test.dir/cmake_clean.cmake
 .PHONY : xlpublic/utility/CMakeFiles/MyBase64_test.dir/clean
 
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/depend:
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/learngit/xl_public /mnt/hgfs/learngit/xl_public/xlpublic/utility /mnt/hgfs/learngit/xl_public/build /mnt/hgfs/learngit/xl_public/build/xlpublic/utility /mnt/hgfs/learngit/xl_public/build/xlpublic/utility/CMakeFiles/MyBase64_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/source/xl_public /mnt/hgfs/source/xl_public/xlpublic/utility /mnt/hgfs/source/xl_public/build /mnt/hgfs/source/xl_public/build/xlpublic/utility /mnt/hgfs/source/xl_public/build/xlpublic/utility/CMakeFiles/MyBase64_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xlpublic/utility/CMakeFiles/MyBase64_test.dir/depend
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/hgfs/learngit/xl_public/tests/echoser_select.cpp
+/mnt/hgfs/source/xl_public/tests/echoser_select.cpp
 stdio.h
 -
 netinet/in.h

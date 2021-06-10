@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/hgfs/learngit/xl_public/tests/echoser_select.cpp" "/mnt/hgfs/learngit/xl_public/build/tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.o"
+  "/mnt/hgfs/source/xl_public/tests/echoser_select.cpp" "/mnt/hgfs/source/xl_public/build/tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

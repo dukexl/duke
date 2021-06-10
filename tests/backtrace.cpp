@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <signal.h>
 #include <execinfo.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@ SIGSEGV --- Segment Fault. The possible cases of your encountering this error ar
 
 SIGFPE是当一个进程执行了一个错误的算术操作时发送给它的信号
 */
-int test_flag = 1;  // 1 means SIGSEGV, 2 means SIGFPE
+int test_flag = 1; // 1 means SIGSEGV, 2 means SIGFPE
 
 namespace detail
 {
@@ -25,8 +25,8 @@ namespace detail
 		printf("This is c_do_nothing : %f, %d\n", f, c);
 		if (test_flag == 1)
 		{
-			char *p = reinterpret_cast<char*>(c);
-			*p = 'C';     // 段错误
+			char *p = reinterpret_cast<char *>(c);
+			*p = 'C'; // 段错误
 		}
 		else if (test_flag == 2)
 		{
@@ -35,7 +35,6 @@ namespace detail
 		printf("result = %d\n", c);
 	}
 }
-
 
 void bTwo(int b, const char *str)
 {
@@ -77,7 +76,7 @@ int main()
 {
 	// catch 段错误
 	signal(SIGSEGV, debugBacktrace);
-	// catch 浮点数例外 
+	// catch 浮点数例外
 	signal(SIGFPE, debugBacktrace);
 
 	aTest(1);

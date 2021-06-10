@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/learngit/xl_public/xlpublic/utility
+# Install script for directory: /mnt/hgfs/source/xl_public/xlpublic/utility
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

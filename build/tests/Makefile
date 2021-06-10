@@ -68,10 +68,10 @@ RM = /home/xuli/build/cmake-3.17.1-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/learngit/xl_public
+CMAKE_SOURCE_DIR = /mnt/hgfs/source/xl_public
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/learngit/xl_public/build
+CMAKE_BINARY_DIR = /mnt/hgfs/source/xl_public/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/learngit/xl_public/build/CMakeFiles /mnt/hgfs/learngit/xl_public/build/tests/CMakeFiles/progress.marks
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/learngit/xl_public/build/CMakeFiles 0
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/source/xl_public/build/CMakeFiles /mnt/hgfs/source/xl_public/build/tests/CMakeFiles/progress.marks
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/source/xl_public/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/MyEchoser_select.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_select.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_select.dir/rule
 .PHONY : tests/CMakeFiles/MyEchoser_select.dir/rule
 
 # Convenience name for target.
@@ -142,12 +142,12 @@ MyEchoser_select: tests/CMakeFiles/MyEchoser_select.dir/rule
 
 # fast build rule for target.
 MyEchoser_select/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/build
 .PHONY : MyEchoser_select/fast
 
 # Convenience name for target.
 tests/CMakeFiles/MyBacktrace.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyBacktrace.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyBacktrace.dir/rule
 .PHONY : tests/CMakeFiles/MyBacktrace.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ MyBacktrace: tests/CMakeFiles/MyBacktrace.dir/rule
 
 # fast build rule for target.
 MyBacktrace/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/build
 .PHONY : MyBacktrace/fast
 
 # Convenience name for target.
 tests/CMakeFiles/MyEchaocli.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchaocli.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchaocli.dir/rule
 .PHONY : tests/CMakeFiles/MyEchaocli.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ MyEchaocli: tests/CMakeFiles/MyEchaocli.dir/rule
 
 # fast build rule for target.
 MyEchaocli/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/build
 .PHONY : MyEchaocli/fast
 
 # Convenience name for target.
 tests/CMakeFiles/MyEchoser_poll.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_poll.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_poll.dir/rule
 .PHONY : tests/CMakeFiles/MyEchoser_poll.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ MyEchoser_poll: tests/CMakeFiles/MyEchoser_poll.dir/rule
 
 # fast build rule for target.
 MyEchoser_poll/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/build
 .PHONY : MyEchoser_poll/fast
 
 # Convenience name for target.
 tests/CMakeFiles/MyEchoser_epoll.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_epoll.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/MyEchoser_epoll.dir/rule
 .PHONY : tests/CMakeFiles/MyEchoser_epoll.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ MyEchoser_epoll: tests/CMakeFiles/MyEchoser_epoll.dir/rule
 
 # fast build rule for target.
 MyEchoser_epoll/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/build
 .PHONY : MyEchoser_epoll/fast
 
 backtrace.o: backtrace.cpp.o
@@ -211,7 +211,7 @@ backtrace.o: backtrace.cpp.o
 
 # target to build an object file
 backtrace.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.o
 .PHONY : backtrace.cpp.o
 
 backtrace.i: backtrace.cpp.i
@@ -220,7 +220,7 @@ backtrace.i: backtrace.cpp.i
 
 # target to preprocess a source file
 backtrace.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.i
 .PHONY : backtrace.cpp.i
 
 backtrace.s: backtrace.cpp.s
@@ -229,7 +229,7 @@ backtrace.s: backtrace.cpp.s
 
 # target to generate assembly for a file
 backtrace.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyBacktrace.dir/build.make tests/CMakeFiles/MyBacktrace.dir/backtrace.cpp.s
 .PHONY : backtrace.cpp.s
 
 echocli.o: echocli.cpp.o
@@ -238,7 +238,7 @@ echocli.o: echocli.cpp.o
 
 # target to build an object file
 echocli.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.o
 .PHONY : echocli.cpp.o
 
 echocli.i: echocli.cpp.i
@@ -247,7 +247,7 @@ echocli.i: echocli.cpp.i
 
 # target to preprocess a source file
 echocli.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.i
 .PHONY : echocli.cpp.i
 
 echocli.s: echocli.cpp.s
@@ -256,7 +256,7 @@ echocli.s: echocli.cpp.s
 
 # target to generate assembly for a file
 echocli.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchaocli.dir/build.make tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.s
 .PHONY : echocli.cpp.s
 
 echoser_epoll.o: echoser_epoll.cpp.o
@@ -265,7 +265,7 @@ echoser_epoll.o: echoser_epoll.cpp.o
 
 # target to build an object file
 echoser_epoll.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.o
 .PHONY : echoser_epoll.cpp.o
 
 echoser_epoll.i: echoser_epoll.cpp.i
@@ -274,7 +274,7 @@ echoser_epoll.i: echoser_epoll.cpp.i
 
 # target to preprocess a source file
 echoser_epoll.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.i
 .PHONY : echoser_epoll.cpp.i
 
 echoser_epoll.s: echoser_epoll.cpp.s
@@ -283,7 +283,7 @@ echoser_epoll.s: echoser_epoll.cpp.s
 
 # target to generate assembly for a file
 echoser_epoll.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_epoll.dir/build.make tests/CMakeFiles/MyEchoser_epoll.dir/echoser_epoll.cpp.s
 .PHONY : echoser_epoll.cpp.s
 
 echoser_poll.o: echoser_poll.cpp.o
@@ -292,7 +292,7 @@ echoser_poll.o: echoser_poll.cpp.o
 
 # target to build an object file
 echoser_poll.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.o
 .PHONY : echoser_poll.cpp.o
 
 echoser_poll.i: echoser_poll.cpp.i
@@ -301,7 +301,7 @@ echoser_poll.i: echoser_poll.cpp.i
 
 # target to preprocess a source file
 echoser_poll.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.i
 .PHONY : echoser_poll.cpp.i
 
 echoser_poll.s: echoser_poll.cpp.s
@@ -310,7 +310,7 @@ echoser_poll.s: echoser_poll.cpp.s
 
 # target to generate assembly for a file
 echoser_poll.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_poll.dir/build.make tests/CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.s
 .PHONY : echoser_poll.cpp.s
 
 echoser_select.o: echoser_select.cpp.o
@@ -319,7 +319,7 @@ echoser_select.o: echoser_select.cpp.o
 
 # target to build an object file
 echoser_select.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.o
 .PHONY : echoser_select.cpp.o
 
 echoser_select.i: echoser_select.cpp.i
@@ -328,7 +328,7 @@ echoser_select.i: echoser_select.cpp.i
 
 # target to preprocess a source file
 echoser_select.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.i
 .PHONY : echoser_select.cpp.i
 
 echoser_select.s: echoser_select.cpp.s
@@ -337,7 +337,7 @@ echoser_select.s: echoser_select.cpp.s
 
 # target to generate assembly for a file
 echoser_select.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/MyEchoser_select.dir/build.make tests/CMakeFiles/MyEchoser_select.dir/echoser_select.cpp.s
 .PHONY : echoser_select.cpp.s
 
 # Help Target
@@ -379,6 +379,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

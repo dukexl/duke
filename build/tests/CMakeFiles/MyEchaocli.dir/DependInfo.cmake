@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/hgfs/learngit/xl_public/tests/echocli.cpp" "/mnt/hgfs/learngit/xl_public/build/tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.o"
+  "/mnt/hgfs/source/xl_public/tests/echocli.cpp" "/mnt/hgfs/source/xl_public/build/tests/CMakeFiles/MyEchaocli.dir/echocli.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

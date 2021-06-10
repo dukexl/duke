@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/hgfs/learngit/xl_public/tests/echocli.cpp
+/mnt/hgfs/source/xl_public/tests/echocli.cpp
 unistd.h
 -
 sys/types.h

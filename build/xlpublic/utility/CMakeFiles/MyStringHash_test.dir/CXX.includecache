@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.cpp
+/mnt/hgfs/source/xl_public/xlpublic/utility/stringhash.cpp
 stringhash.h
-/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+/mnt/hgfs/source/xl_public/xlpublic/utility/stringhash.h
 
-/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+/mnt/hgfs/source/xl_public/xlpublic/utility/stringhash.h
 
-/mnt/hgfs/learngit/xl_public/xlpublic/utility/test/stringhash_test.cpp
+/mnt/hgfs/source/xl_public/xlpublic/utility/test/stringhash_test.cpp
 ../stringhash.h
-/mnt/hgfs/learngit/xl_public/xlpublic/utility/stringhash.h
+/mnt/hgfs/source/xl_public/xlpublic/utility/stringhash.h
 iostream
 -
 string

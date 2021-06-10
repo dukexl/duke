@@ -14,7 +14,7 @@ set(CXX_FLAGS
     -D_FILE_OFFSET_BITS=64
     -Wall
     -Wextra
-    -Werror
+    #-Werror
     #-Wconversion
     -Wno-unused-parameter
 	-Wno-unused-value
@@ -26,7 +26,7 @@ set(CXX_FLAGS
     -Wno-write-strings
 	-Wno-char-subscripts 
     -march=native
-    -std=c++0x
+    -std=c++11
     -rdynamic ) 
 	
 if(CMAKE_BUILD_BITS EQUAL 32) 
@@ -58,6 +58,7 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 #	message(STATUS "found curl") 
 #endif()
 
+message("build .o")
 add_subdirectory(examples) 
 add_subdirectory(tests) 
-add_subdirectory(xlpublic)
+# add_subdirectory(xlpublic)

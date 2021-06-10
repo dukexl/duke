@@ -68,10 +68,10 @@ RM = /home/xuli/build/cmake-3.17.1-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/learngit/xl_public
+CMAKE_SOURCE_DIR = /mnt/hgfs/source/xl_public
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/learngit/xl_public/build
+CMAKE_BINARY_DIR = /mnt/hgfs/source/xl_public/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/learngit/xl_public/build/CMakeFiles /mnt/hgfs/learngit/xl_public/build/xlpublic/utility/CMakeFiles/progress.marks
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/learngit/xl_public/build/CMakeFiles 0
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/source/xl_public/build/CMakeFiles /mnt/hgfs/source/xl_public/build/xlpublic/utility/CMakeFiles/progress.marks
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/source/xl_public/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/clean
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/preinstall
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/preinstall
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xlpublic/utility/CMakeFiles/MyBase64_test.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyBase64_test.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyBase64_test.dir/rule
 .PHONY : xlpublic/utility/CMakeFiles/MyBase64_test.dir/rule
 
 # Convenience name for target.
@@ -142,12 +142,12 @@ MyBase64_test: xlpublic/utility/CMakeFiles/MyBase64_test.dir/rule
 
 # fast build rule for target.
 MyBase64_test/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/build
 .PHONY : MyBase64_test/fast
 
 # Convenience name for target.
 xlpublic/utility/CMakeFiles/MySha1_test.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MySha1_test.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MySha1_test.dir/rule
 .PHONY : xlpublic/utility/CMakeFiles/MySha1_test.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ MySha1_test: xlpublic/utility/CMakeFiles/MySha1_test.dir/rule
 
 # fast build rule for target.
 MySha1_test/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/build
 .PHONY : MySha1_test/fast
 
 # Convenience name for target.
 xlpublic/utility/CMakeFiles/MyMd5_test.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyMd5_test.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyMd5_test.dir/rule
 .PHONY : xlpublic/utility/CMakeFiles/MyMd5_test.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ MyMd5_test: xlpublic/utility/CMakeFiles/MyMd5_test.dir/rule
 
 # fast build rule for target.
 MyMd5_test/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/build
 .PHONY : MyMd5_test/fast
 
 # Convenience name for target.
 xlpublic/utility/CMakeFiles/MyStringHash_test.dir/rule:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyStringHash_test.dir/rule
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xlpublic/utility/CMakeFiles/MyStringHash_test.dir/rule
 .PHONY : xlpublic/utility/CMakeFiles/MyStringHash_test.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ MyStringHash_test: xlpublic/utility/CMakeFiles/MyStringHash_test.dir/rule
 
 # fast build rule for target.
 MyStringHash_test/fast:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build
 .PHONY : MyStringHash_test/fast
 
 base64.o: base64.cpp.o
@@ -196,7 +196,7 @@ base64.o: base64.cpp.o
 
 # target to build an object file
 base64.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.o
 .PHONY : base64.cpp.o
 
 base64.i: base64.cpp.i
@@ -205,7 +205,7 @@ base64.i: base64.cpp.i
 
 # target to preprocess a source file
 base64.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.i
 .PHONY : base64.cpp.i
 
 base64.s: base64.cpp.s
@@ -214,7 +214,7 @@ base64.s: base64.cpp.s
 
 # target to generate assembly for a file
 base64.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/base64.cpp.s
 .PHONY : base64.cpp.s
 
 md5.o: md5.cpp.o
@@ -223,7 +223,7 @@ md5.o: md5.cpp.o
 
 # target to build an object file
 md5.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.o
 .PHONY : md5.cpp.o
 
 md5.i: md5.cpp.i
@@ -232,7 +232,7 @@ md5.i: md5.cpp.i
 
 # target to preprocess a source file
 md5.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.i
 .PHONY : md5.cpp.i
 
 md5.s: md5.cpp.s
@@ -241,7 +241,7 @@ md5.s: md5.cpp.s
 
 # target to generate assembly for a file
 md5.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/md5.cpp.s
 .PHONY : md5.cpp.s
 
 sha1.o: sha1.cpp.o
@@ -250,7 +250,7 @@ sha1.o: sha1.cpp.o
 
 # target to build an object file
 sha1.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.o
 .PHONY : sha1.cpp.o
 
 sha1.i: sha1.cpp.i
@@ -259,7 +259,7 @@ sha1.i: sha1.cpp.i
 
 # target to preprocess a source file
 sha1.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.i
 .PHONY : sha1.cpp.i
 
 sha1.s: sha1.cpp.s
@@ -268,7 +268,7 @@ sha1.s: sha1.cpp.s
 
 # target to generate assembly for a file
 sha1.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/sha1.cpp.s
 .PHONY : sha1.cpp.s
 
 stringhash.o: stringhash.cpp.o
@@ -277,7 +277,7 @@ stringhash.o: stringhash.cpp.o
 
 # target to build an object file
 stringhash.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.o
 .PHONY : stringhash.cpp.o
 
 stringhash.i: stringhash.cpp.i
@@ -286,7 +286,7 @@ stringhash.i: stringhash.cpp.i
 
 # target to preprocess a source file
 stringhash.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.i
 .PHONY : stringhash.cpp.i
 
 stringhash.s: stringhash.cpp.s
@@ -295,7 +295,7 @@ stringhash.s: stringhash.cpp.s
 
 # target to generate assembly for a file
 stringhash.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/stringhash.cpp.s
 .PHONY : stringhash.cpp.s
 
 test/base64_test.o: test/base64_test.cpp.o
@@ -304,7 +304,7 @@ test/base64_test.o: test/base64_test.cpp.o
 
 # target to build an object file
 test/base64_test.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.o
 .PHONY : test/base64_test.cpp.o
 
 test/base64_test.i: test/base64_test.cpp.i
@@ -313,7 +313,7 @@ test/base64_test.i: test/base64_test.cpp.i
 
 # target to preprocess a source file
 test/base64_test.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.i
 .PHONY : test/base64_test.cpp.i
 
 test/base64_test.s: test/base64_test.cpp.s
@@ -322,7 +322,7 @@ test/base64_test.s: test/base64_test.cpp.s
 
 # target to generate assembly for a file
 test/base64_test.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyBase64_test.dir/build.make xlpublic/utility/CMakeFiles/MyBase64_test.dir/test/base64_test.cpp.s
 .PHONY : test/base64_test.cpp.s
 
 test/md5_test.o: test/md5_test.cpp.o
@@ -331,7 +331,7 @@ test/md5_test.o: test/md5_test.cpp.o
 
 # target to build an object file
 test/md5_test.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.o
 .PHONY : test/md5_test.cpp.o
 
 test/md5_test.i: test/md5_test.cpp.i
@@ -340,7 +340,7 @@ test/md5_test.i: test/md5_test.cpp.i
 
 # target to preprocess a source file
 test/md5_test.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.i
 .PHONY : test/md5_test.cpp.i
 
 test/md5_test.s: test/md5_test.cpp.s
@@ -349,7 +349,7 @@ test/md5_test.s: test/md5_test.cpp.s
 
 # target to generate assembly for a file
 test/md5_test.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyMd5_test.dir/build.make xlpublic/utility/CMakeFiles/MyMd5_test.dir/test/md5_test.cpp.s
 .PHONY : test/md5_test.cpp.s
 
 test/sha1_test.o: test/sha1_test.cpp.o
@@ -358,7 +358,7 @@ test/sha1_test.o: test/sha1_test.cpp.o
 
 # target to build an object file
 test/sha1_test.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.o
 .PHONY : test/sha1_test.cpp.o
 
 test/sha1_test.i: test/sha1_test.cpp.i
@@ -367,7 +367,7 @@ test/sha1_test.i: test/sha1_test.cpp.i
 
 # target to preprocess a source file
 test/sha1_test.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.i
 .PHONY : test/sha1_test.cpp.i
 
 test/sha1_test.s: test/sha1_test.cpp.s
@@ -376,7 +376,7 @@ test/sha1_test.s: test/sha1_test.cpp.s
 
 # target to generate assembly for a file
 test/sha1_test.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MySha1_test.dir/build.make xlpublic/utility/CMakeFiles/MySha1_test.dir/test/sha1_test.cpp.s
 .PHONY : test/sha1_test.cpp.s
 
 test/stringhash_test.o: test/stringhash_test.cpp.o
@@ -385,7 +385,7 @@ test/stringhash_test.o: test/stringhash_test.cpp.o
 
 # target to build an object file
 test/stringhash_test.cpp.o:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.o
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.o
 .PHONY : test/stringhash_test.cpp.o
 
 test/stringhash_test.i: test/stringhash_test.cpp.i
@@ -394,7 +394,7 @@ test/stringhash_test.i: test/stringhash_test.cpp.i
 
 # target to preprocess a source file
 test/stringhash_test.cpp.i:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.i
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.i
 .PHONY : test/stringhash_test.cpp.i
 
 test/stringhash_test.s: test/stringhash_test.cpp.s
@@ -403,7 +403,7 @@ test/stringhash_test.s: test/stringhash_test.cpp.s
 
 # target to generate assembly for a file
 test/stringhash_test.cpp.s:
-	cd /mnt/hgfs/learngit/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.s
+	cd /mnt/hgfs/source/xl_public/build && $(MAKE) $(MAKESILENT) -f xlpublic/utility/CMakeFiles/MyStringHash_test.dir/build.make xlpublic/utility/CMakeFiles/MyStringHash_test.dir/test/stringhash_test.cpp.s
 .PHONY : test/stringhash_test.cpp.s
 
 # Help Target
@@ -453,6 +453,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/hgfs/learngit/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/hgfs/source/xl_public/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
