@@ -1,5 +1,5 @@
-#ifndef XUPUBLIC_THREAD_H
-#define XUPUBLIC_THREAD_H
+#ifndef XL_BASE_THREAD_H
+#define XL_BASE_THREAD_H
 
 #include "Atomic.h"
 #include "Types.h"

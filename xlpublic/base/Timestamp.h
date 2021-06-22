@@ -2,16 +2,18 @@
 // Filename         : Timestamp.h
 // Author           : XULI
 // Created          : 2020-10-13
-// Description      : 时间挫函数
+// Description      : 时间戳函数
 // ***********************************************************************
 
-#ifndef _TIMESTAMP_H_
-#define _TIMESTAMP_H_
+#ifndef XL_BASE_TIMESTAMP_H
+#define XL_BASE_TIMESTAMP_H
 
 #include <xlpublic/base/copyable.h>
 #include <xlpublic/base/Types.h>
-
+#include <string>
+#include <stdio.h>
 #include <boost/operators.hpp>
+using namespace std;
 
 namespace XL
 {

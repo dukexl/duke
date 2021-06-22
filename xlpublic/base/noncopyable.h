@@ -1,4 +1,4 @@
-﻿// ***********************************************************************
+// ***********************************************************************
 // Filename         : noncopyable.h
 // Author           : XULI
 // Created          : 2020-8-28
@@ -7,16 +7,18 @@
 #ifndef XL_BASE_NONCOPYABLE_H
 #define XL_BASE_NONCOPYABLE_H
 
-namespace XL {
-	class noncopyable {
+namespace XL
+{
+	class noncopyable
+	{
 	public:
-		noncopyable(const noncopyable&) = delete;
-		void operator=(const noncopyable&) = delete;
+		noncopyable(const noncopyable &) = delete;
+		void operator=(const noncopyable &) = delete;
 
 	protected:
 		noncopyable() = default;
 		~noncopyable() = default;
-	};	
+	};
 }
 
-#endif  /* XL_BASE_NONCOPYABLE_H */
+#endif /* XL_BASE_NONCOPYABLE_H */

@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <netinet/in.h> //for sockaddr_in
 #include <sys/types.h>
 #include <sys/socket.h>

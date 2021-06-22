@@ -1,4 +1,4 @@
-﻿#include "sha1.h"
+#include "sha1.h"
 #include <string.h>
 namespace XL
 {
@@ -33,26 +33,27 @@ namespace XL
 		// blk0() and blk() perform the initial expand.
 		// I got the idea of expanding during the round function from SSLeay
 #define blk0(i) (block->l[i] = (rol(block->l[i], 24) & 0xFF00FF00) | \
-            (rol(block->l[i], 8) & 0x00FF00FF))
-#define blk(i) (block->l[i & 15] = rol(block->l[(i + 13) & 15] ^ \
-            block->l[(i + 8) & 15] ^ block->l[(i + 2) & 15] ^ block->l[i & 15], 1))
+							   (rol(block->l[i], 8) & 0x00FF00FF))
+#define blk(i) (block->l[i & 15] = rol(block->l[(i + 13) & 15] ^                                               \
+										   block->l[(i + 8) & 15] ^ block->l[(i + 2) & 15] ^ block->l[i & 15], \
+									   1))
 
-				// (R0+R1), R2, R3, R4 are the different operations used in SHA1.
-#define R0(v, w, x, y, z, i) \
-            z += ((w & (x ^ y)) ^ y) + blk0(i) + 0x5A827999 + rol(v, 5); \
-            w = rol(w, 30);
-#define R1(v, w, x, y, z, i) \
-            z += ((w & (x ^ y)) ^ y) + blk(i) + 0x5A827999 + rol(v, 5); \
-            w = rol(w, 30);
-#define R2(v, w, x, y, z, i) \
-            z += (w ^ x ^ y) + blk(i) + 0x6ED9EBA1 + rol(v, 5);\
-            w = rol(w, 30);
-#define R3(v, w, x, y, z, i) \
-            z += (((w | x) & y) | (w & x)) + blk(i) + 0x8F1BBCDC + rol(v, 5); \
-            w = rol(w, 30);
-#define R4(v, w, x, y, z, i) \
-            z += (w ^ x ^ y) + blk(i) + 0xCA62C1D6 + rol(v, 5); \
-            w = rol(w, 30);
+		// (R0+R1), R2, R3, R4 are the different operations used in SHA1.
+#define R0(v, w, x, y, z, i)                                     \
+	z += ((w & (x ^ y)) ^ y) + blk0(i) + 0x5A827999 + rol(v, 5); \
+	w = rol(w, 30);
+#define R1(v, w, x, y, z, i)                                    \
+	z += ((w & (x ^ y)) ^ y) + blk(i) + 0x5A827999 + rol(v, 5); \
+	w = rol(w, 30);
+#define R2(v, w, x, y, z, i)                            \
+	z += (w ^ x ^ y) + blk(i) + 0x6ED9EBA1 + rol(v, 5); \
+	w = rol(w, 30);
+#define R3(v, w, x, y, z, i)                                          \
+	z += (((w | x) & y) | (w & x)) + blk(i) + 0x8F1BBCDC + rol(v, 5); \
+	w = rol(w, 30);
+#define R4(v, w, x, y, z, i)                            \
+	z += (w ^ x ^ y) + blk(i) + 0xCA62C1D6 + rol(v, 5); \
+	w = rol(w, 30);
 
 		// Hash a single 512-bit block. This is the core of the algorithm.
 		void SHA1::sha1Transform(uint32_t state[5], const uint8_t buffer[64])
@@ -64,7 +65,7 @@ namespace XL
 			};
 
 			// Note(fbarchard): This option does modify the user's data buffer.
-			CHAR64LONG16* block = const_cast<CHAR64LONG16*>(reinterpret_cast<const CHAR64LONG16*>(buffer));
+			CHAR64LONG16 *block = const_cast<CHAR64LONG16 *>(reinterpret_cast<const CHAR64LONG16 *>(buffer));
 
 			// Copy context_.state[] to working vars.
 			uint32_t a = state[0];
@@ -166,14 +167,14 @@ namespace XL
 			state[4] += e;
 		}
 
-		void SHA1::update(const std::string& src)
+		void SHA1::update(const std::string &src)
 		{
-			const uint8_t* buff = reinterpret_cast<const uint8_t*>(src.data());
+			const uint8_t *buff = reinterpret_cast<const uint8_t *>(src.data());
 			update(buff, src.size());
 		}
 
 		// Run your data through this.
-		void SHA1::update(const uint8_t* data, size_t input_len)
+		void SHA1::update(const uint8_t *data, size_t input_len)
 		{
 			size_t i = 0;
 
@@ -188,7 +189,7 @@ namespace XL
 			context_.count[0] += static_cast<uint32_t>(input_len << 3);
 			if (context_.count[0] < static_cast<uint32_t>(input_len << 3))
 			{
-				++context_.count[1];  // if overlow (carry), add one to high word
+				++context_.count[1]; // if overlow (carry), add one to high word
 			}
 			context_.count[1] += static_cast<uint32_t>(input_len >> 29);
 			if ((index + input_len) > 63)
@@ -214,20 +215,20 @@ namespace XL
 				// Endian independent
 				finalcount[i] = static_cast<uint8_t>((context_.count[(i >= 4 ? 0 : 1)] >> ((3 - (i & 3)) * 8)) & 255);
 			}
-			update(reinterpret_cast<const uint8_t*>("\200"), 1);
+			update(reinterpret_cast<const uint8_t *>("\200"), 1);
 			while ((context_.count[0] & 504) != 448)
 			{
-				update(reinterpret_cast<const uint8_t*>("\0"), 1);
+				update(reinterpret_cast<const uint8_t *>("\0"), 1);
 			}
 			// Should cause a SHA1Transform().
 			update(finalcount, 8);
 			// Wipe variables.
-			memset(finalcount, 0, 8);   // SWR
+			memset(finalcount, 0, 8); // SWR
 		}
 
-		void SHA1::final(void* digest)
+		void SHA1::final(void *digest)
 		{
-			char* data = static_cast<char*>(digest);
+			char *data = static_cast<char *>(digest);
 			finalInternal();
 			for (int i = 0; i < kSHA1DigestSize; ++i)
 			{
@@ -235,11 +236,10 @@ namespace XL
 			}
 		}
 
-
-		static std::string encodeAsString(const void* data, size_t size, bool uppercase = false)
+		static std::string encodeAsString(const void *data, size_t size, bool uppercase = false)
 		{
-			const char* hex_digits = uppercase ? "0123456789ABCDEF" : "0123456789abcdef";
-			const unsigned char* p = static_cast<const unsigned char*>(data);
+			const char *hex_digits = uppercase ? "0123456789ABCDEF" : "0123456789abcdef";
+			const unsigned char *p = static_cast<const unsigned char *>(data);
 			const unsigned char *first = p;
 			const unsigned char *end = p + size;
 
@@ -262,7 +262,7 @@ namespace XL
 			return encodeAsString(digest, 20);
 		}
 
-		std::string SHA1::hexDigest(const std::string& src)
+		std::string SHA1::hexDigest(const std::string &src)
 		{
 			SHA1 sha1;
 			sha1.update(src);

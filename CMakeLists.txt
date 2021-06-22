@@ -18,12 +18,14 @@ set(CXX_FLAGS
     #-Wconversion
     -Wno-unused-parameter
 	-Wno-unused-value
+    -Wno-unused-result
 	-Wno-unused-variable
     #-Wold-style-cast
     -Woverloaded-virtual
     -Wpointer-arith
     #-Wshadow
     -Wno-write-strings
+    -Wno-format-truncation
 	-Wno-char-subscripts 
     -march=native
     -std=c++11
@@ -57,8 +59,7 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 #if(CURL_FOUND) 
 #	message(STATUS "found curl") 
 #endif()
-
-message("build .o")
+include_directories(./)
 add_subdirectory(examples) 
 add_subdirectory(tests) 
-# add_subdirectory(xlpublic)
+add_subdirectory(xlpublic)

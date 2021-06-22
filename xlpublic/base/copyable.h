@@ -1,4 +1,4 @@
-﻿// ***********************************************************************
+// ***********************************************************************
 // Filename         : copyable.h
 // Author           : XULI
 // Created          : 2020-8-28
@@ -7,12 +7,14 @@
 #ifndef XL_BASE_COPYABLE_H
 #define XL_BASE_COPYABLE_H
 
-namespace XL {
-	class copyable {
+namespace XL
+{
+	class copyable
+	{
 	protected:
 		copyable() = default;
 		~copyable() = default;
-	};	
+	};
 }
 
-#endif  /* XL_BASE_COPYABLE_H */
+#endif /* XL_BASE_COPYABLE_H */

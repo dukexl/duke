@@ -1,5 +1,4 @@
-#include <muduo/base/Timestamp.h>
-
+#include <xlpublic/base/Timestamp.h>
 #include <sys/time.h>
 #include <stdio.h>
 #define __STDC_FORMAT_MACROS
@@ -17,16 +16,7 @@ Timestamp::Timestamp(int64_t microseconds)
 {
 }
 
-string Timestamp::toString() const
-{
-    char buf[32] = {0};
-    int64_t seconds = microSecondsSinceEpoch_ / kMicroSecondsPerSecond;
-    int64_t microseconds = microSecondsSinceEpoch_ % kMicroSecondsPerSecond;
-    snprintf(buf, sizeof(buf) - 1, "%" PRId64 ".%06" PRId64 "", seconds, microseconds);
-    return buf;
-}
-
-string Timestamp::toFormattedString() const
+string Timestamp::toFromattedString() const
 {
     char buf[32] = {0};
     time_t seconds = static_cast<time_t>(microSecondsSinceEpoch_ / kMicroSecondsPerSecond);
@@ -38,6 +28,15 @@ string Timestamp::toFormattedString() const
              tm_time.tm_year + 1900, tm_time.tm_mon + 1, tm_time.tm_mday,
              tm_time.tm_hour, tm_time.tm_min, tm_time.tm_sec,
              microseconds);
+    return buf;
+}
+
+string Timestamp::toString() const
+{
+    char buf[32] = {0};
+    int64_t seconds = microSecondsSinceEpoch_ / kMicroSecondsPerSecond;
+    int64_t microseconds = microSecondsSinceEpoch_ % kMicroSecondsPerSecond;
+    snprintf(buf, sizeof(buf) - 1, "%" PRId64 ".%06" PRId64 "", seconds, microseconds);
     return buf;
 }
 

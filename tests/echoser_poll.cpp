@@ -1,4 +1,4 @@
-﻿#include <unistd.h>
+#include <unistd.h>
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/socket.h>
@@ -25,7 +25,7 @@
 
 typedef std::vector<struct pollfd> PollFdList;
 
-int main(void)
+int main()
 {
 	signal(SIGPIPE, SIG_IGN);
 	signal(SIGCHLD, SIG_IGN);

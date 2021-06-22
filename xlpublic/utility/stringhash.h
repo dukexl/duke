@@ -1,9 +1,11 @@
-﻿
+
 #ifndef XL_STRINGHASH_H
 #define XL_STRINGHASH_H
 
-namespace XL {
-	namespace UTILITY {
+namespace XL
+{
+	namespace UTILITY
+	{
 		//SDBM Hash Function
 		unsigned int SDBMHash(const char *str);
 
@@ -24,4 +26,4 @@ namespace XL {
 	}
 }
 
-#endif  /* XL_STRINGHASH_H */
+#endif /* XL_STRINGHASH_H */

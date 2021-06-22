@@ -1,6 +1,8 @@
-﻿#include "stringhash.h"
-namespace XL {
-	namespace UTILITY {
+#include "stringhash.h"
+namespace XL
+{
+	namespace UTILITY
+	{
 		//SDBM Hash Function
 		unsigned int SDBMHash(const char *str)
 		{
@@ -46,7 +48,7 @@ namespace XL {
 		//BKDR Hash Function
 		unsigned int BKDRHash(const char *str)
 		{
-			//unsigned int seed = 131; //31 131 1313 13131 131313 
+			//unsigned int seed = 131; //31 131 1313 13131 131313
 			unsigned int hash = 0;
 
 			while (*str)
@@ -72,8 +74,8 @@ namespace XL {
 
 		unsigned int FNVHash(const char *str)
 		{
-			register unsigned int  hash = 2166136261;
-			while (unsigned int  ch = (unsigned int)*str++)
+			register unsigned int hash = 2166136261;
+			while (unsigned int ch = (unsigned int)*str++)
 			{
 				hash *= 16777619;
 				hash ^= ch;

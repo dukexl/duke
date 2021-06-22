@@ -1,4 +1,4 @@
-﻿// ***********************************************************************
+// ***********************************************************************
 // Filename         : SHA1.h
 // Author           : XL
 // Created          : 2020-8-20
@@ -23,36 +23,36 @@ namespace XL
 			SHA1();
 			~SHA1();
 
-			static std::string hexDigest(const std::string& src);
+			static std::string hexDigest(const std::string &src);
 
 		public:
 			void reset();
-			void update(const std::string& sp);
+			void update(const std::string &sp);
 			// Finalizes the Sha1 operation and fills the buffer with the digest.
 			//  Data is uint8_t digest_[20]
-			void final(void* digest);
+			void final(void *digest);
 			//  Hex encoding for result
 			std::string hexFinal();
 
 		private:
 			void sha1Transform(uint32_t state[5], const uint8_t buffer[64]);
-			void update(const uint8_t* data, size_t input_len);
+			void update(const uint8_t *data, size_t input_len);
 			void finalInternal();
 
 		private:
-			SHA1(const SHA1&);
-			const SHA1& operator=(const SHA1&);
+			SHA1(const SHA1 &);
+			const SHA1 &operator=(const SHA1 &);
 
 			struct SHA1_CTX
 			{
 				uint32_t state[5];
-				uint32_t count[2];  // Bit count of input.
+				uint32_t count[2]; // Bit count of input.
 				uint8_t buffer[64];
 			};
 
 			SHA1_CTX context_;
-			uint8_t  digest_[20];
+			uint8_t digest_[20];
 		};
 	}
 }
-#endif  /* XL_SHA1_H */
+#endif /* XL_SHA1_H */

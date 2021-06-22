@@ -1,10 +1,11 @@
-﻿#include "base64.h"
+#include "base64.h"
 #include <string.h>
-namespace XL {
+namespace XL
+{
 	namespace UTILITY
 	{
-		static size_t base64EncodeImpl(const char *src, size_t len, std::string& dst);
-		static size_t base64DecodeImpl(const char *src, size_t len, std::string& dst);
+		static size_t base64EncodeImpl(const char *src, size_t len, std::string &dst);
+		static size_t base64DecodeImpl(const char *src, size_t len, std::string &dst);
 
 		size_t base64Encode(const char *src, size_t len, char *dst)
 		{
@@ -15,30 +16,29 @@ namespace XL {
 			return size;
 		}
 
-		size_t base64Encode(const char *src, size_t len, std::string& dst)
+		size_t base64Encode(const char *src, size_t len, std::string &dst)
 		{
 			return base64EncodeImpl(src, len, dst);
 		}
 
-		size_t base64Encode(const std::string& src, std::string& dst)
+		size_t base64Encode(const std::string &src, std::string &dst)
 		{
 			return base64EncodeImpl(src.data(), src.size(), dst);
 		}
 
-		std::string    base64Encode(const char *src, size_t len)
+		std::string base64Encode(const char *src, size_t len)
 		{
 			std::string dst;
 			base64EncodeImpl(src, len, dst);
 			return dst;
 		}
 
-		std::string    base64Encode(const std::string& src)
+		std::string base64Encode(const std::string &src)
 		{
 			std::string dst;
 			base64EncodeImpl(src.data(), src.size(), dst);
 			return dst;
 		}
-
 
 		size_t base64Decode(const char *src, size_t len, char *dst)
 		{
@@ -48,36 +48,35 @@ namespace XL {
 			return size;
 		}
 
-		size_t base64Decode(const char *src, size_t len, std::string& dst)
+		size_t base64Decode(const char *src, size_t len, std::string &dst)
 		{
 			return base64DecodeImpl(src, len, dst);
 		}
 
-		size_t base64Decode(const std::string& src, std::string& dst)
+		size_t base64Decode(const std::string &src, std::string &dst)
 		{
 			return base64DecodeImpl(src.data(), src.size(), dst);
 		}
 
-		std::string    base64Decode(const char *src, size_t len)
+		std::string base64Decode(const char *src, size_t len)
 		{
 			std::string dst;
 			base64DecodeImpl(src, len, dst);
 			return dst;
 		}
 
-		std::string    base64Decode(const std::string& src)
+		std::string base64Decode(const std::string &src)
 		{
 			std::string dst;
 			base64DecodeImpl(src.data(), src.size(), dst);
 			return dst;
 		}
 
-
-		static size_t base64EncodeImpl(const char *src, size_t len, std::string& dst)
+		static size_t base64EncodeImpl(const char *src, size_t len, std::string &dst)
 		{
 			static const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-			unsigned char Tmp[4] = { 0 };
+			unsigned char Tmp[4] = {0};
 			int LineLength = 0;
 			for (int i = 0; i < (int)(len / 3); i++)
 			{
@@ -88,7 +87,11 @@ namespace XL {
 				dst += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
 				dst += EncodeTable[((Tmp[2] << 2) | (Tmp[3] >> 6)) & 0x3F];
 				dst += EncodeTable[Tmp[3] & 0x3F];
-				if (LineLength += 4, LineLength == 76) { dst += "\r\n"; LineLength = 0; }
+				if (LineLength += 4, LineLength == 76)
+				{
+					dst += "\r\n";
+					LineLength = 0;
+				}
 			}
 			int Mod = len % 3;
 			if (Mod == 1)
@@ -111,19 +114,18 @@ namespace XL {
 			return dst.size();
 		}
 
-		static size_t base64DecodeImpl(const char *src, size_t len, std::string& dst)
+		static size_t base64DecodeImpl(const char *src, size_t len, std::string &dst)
 		{
 			static const char DecodeTable[] =
-			{
-				0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
-				0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
-				0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   62,  0,   0,   0,  63,
-				52,  53,  54,  55,  56,  57,  58,  59,  60,  61,  0,   0,   0,   0,   0,   0,
-				0,   0,   1,   2,   3,   4,   5,   6,   7,   8,   9,   10,  11,  12,  13,  14,
-				15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  0,   0,   0,   0,   0,
-				0,   26,  27,  28,  29,  30,  31,  32,  33,  34,  35,  36,  37,  38,  39,  40,
-				41,  42,  43,  44,  45,  46,  47,  48,  49,  50,  51,  0,   0,   0,   0,   0
-			};
+				{
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 63,
+					52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 0, 0, 0, 0, 0, 0,
+					0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+					15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 0, 0, 0, 0, 0,
+					0, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+					41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 0, 0, 0, 0, 0};
 
 			int nValue = 0;
 			size_t i = 0;
@@ -146,7 +148,7 @@ namespace XL {
 					}
 					i += 4;
 				}
-				else  
+				else
 				{
 					src++;
 					i++;

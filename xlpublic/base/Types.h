@@ -7,10 +7,10 @@
 #ifndef _TYPES_H_
 #define _TYPES_H_
 #include <string>
+using std::string;
 
 namespace XL
 {
-    using std::string;
     template <typename To, typename From>
     inline To implicit_cast(From const &f)
     {

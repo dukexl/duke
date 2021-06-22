@@ -1,4 +1,4 @@
-﻿#include "../base64.h"
+#include "../base64.h"
 #include <iostream>
 #include <string>
 using namespace std;

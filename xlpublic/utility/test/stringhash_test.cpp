@@ -1,4 +1,4 @@
-﻿#include "../stringhash.h"
+#include "../stringhash.h"
 #include <iostream>
 #include <string>
 using namespace std;

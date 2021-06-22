@@ -1,0 +1,1 @@
+add_executable(atmoic_test atmoic_test.cpp)
