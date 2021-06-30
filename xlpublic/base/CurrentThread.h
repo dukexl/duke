@@ -1,7 +1,7 @@
 #ifndef XL_BASE_CURRENTTHREAD_H
 #define XL_BASE_CURRENTTHREAD_H
 
-namespace xlpublic
+namespace XL
 {
     namespace CurrentThread
     {
@@ -25,7 +25,7 @@ namespace xlpublic
             return t_tidStirng;
         }
 
-        inline const char *name
+        inline const char *name()
         {
             return t_threadName;
         }
