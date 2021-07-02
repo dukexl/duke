@@ -24,7 +24,7 @@ namespace XL
         pid_t tid() const { return tid_; }
         const string &name() const { return name_; }
 
-        static int numCreated() { return numCreated.get(); }
+        static int numCreated() { return numCreated_.get(); }
 
     private:
         static void *stratThread(void *thread);
