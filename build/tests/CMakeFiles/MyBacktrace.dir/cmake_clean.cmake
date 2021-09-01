@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../bin/MyBacktrace"
   "../bin/MyBacktrace.pdb"
   "CMakeFiles/MyBacktrace.dir/backtrace.cpp.o"
+  "CMakeFiles/MyBacktrace.dir/backtrace.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

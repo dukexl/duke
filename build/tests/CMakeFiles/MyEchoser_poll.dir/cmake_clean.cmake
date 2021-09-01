@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../bin/MyEchoser_poll"
   "../bin/MyEchoser_poll.pdb"
   "CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.o"
+  "CMakeFiles/MyEchoser_poll.dir/echoser_poll.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
