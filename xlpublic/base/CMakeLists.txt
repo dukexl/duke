@@ -1,6 +1,6 @@
 add_subdirectory(tests)
 
-set(base_SRCS  Condition.cpp CountDownLatch.cpp Exception.cpp Thread.cpp Timestamp.cpp)
+set(base_SRCS  Condition.cpp CountDownLatch.cpp Exception.cpp)
 
 add_library(xl_base ${base_SRCS})
 target_link_libraries(xl_base pthread rt)

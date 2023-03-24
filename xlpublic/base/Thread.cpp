@@ -2,8 +2,8 @@
 #include <xlpublic/base/CountDownLatch.h>
 #include <xlpublic/base/Exception.h>
 
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_same.hpp>
+// #include <boost/static_assert.hpp>
+// #include <boost/type_traits/is_same.hpp>
 
 #include <errno.h>
 #include <stdio.h>

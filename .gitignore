@@ -38,4 +38,4 @@ a.out
 example_*_cpp*
 
 # 忽略的文件夹
-build/
+build/*
