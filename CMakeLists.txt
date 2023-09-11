@@ -1,5 +1,15 @@
 cmake_minimum_required(VERSION 3.0) 
 ###################################################################################
+#默认不开启，开启的两种方法：
+#在CMakeLists.txt中添加 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+#在命令行中添加-DCMAKE_EXPORT_COMPILE_COMMANDS=on
+#开启后，其生成的文件compile_commands.json，包含所有编译单元所执行的指令
+#set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(BUILD_SHARED_LIBS ON)
+#set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
 project(total)
 
 if (CMAKE_BUILD_TYPE) 

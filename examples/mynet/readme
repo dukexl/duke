@@ -1,0 +1,35 @@
+socket客户端和服务端基本函数
+<sys/socket.h> 头文件
+socket(AF_INET, SOCK_STREAM, 0)
+connect(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
+close(sockfd)
+
+socket(AF_INET, SOCK_STREAM, 0)
+bind(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr))
+listen(sockfd, SOMAXCONN)
+accept(sockfd, (sockaddr*)&clnt_addr, &clnt_addr_len)
+close(sockfd)
+
+日志
+
+可拷贝类
+关于 C++11 常用一些知识点，这里也简单地给读者列举一下。
+
+auto 关键字
+for-each 循环
+右值及移动构造函数 + std::forward + std::move + stl 容器新增的 emplace_back() 方法
+std::thread 库、std::chrono 库
+智能指针系列（std::shared_ptr/std::unique_ptr/std::weak_ptr），智能指针的实现原理一定要知道，最好是自己实现过
+线程库 std::thread + 线程同步技术库 std::mutex/std::condition_variable/std::lock_guard 等
+Lamda 表达式（Java 中现在也常常考察 Lamda 表达式的作用）
+std::bind/std::function 库
+其他的就是一些关键字的用法（override、final、delete），还有就是一些细节如可以像 Java 一样在类成员变量定义处给出初始化值。
+
+
+学习的过程是先接触，再熟悉，再模仿，再创造。不管什么开源项目，在您心中没有任何思路或者解决方案时，您应该先接触熟悉，不断模仿，做到至少心中有一套对于某场景的解决方案，然后再来谈创新谈批判、改造别人的项目。
+
+
+add_executable(mynet_client ./src/util.cpp client.cpp)
+add_executable(ThreadPoolTest ./src/ThreadPool.cpp ThreadPoolTest.cpp)
+add_executable(mynet_server ./src/util.cpp ./src/InetAddress.cpp ./src/Socket.cpp ./src/Channel.cpp ./src/Buffer.cpp ./src/ThreadPool.cpp
+./src/Epoll.cpp ./src/Acceptor.cpp ./src/Connection.cpp ./src/EventLoop.cpp ./src/Server.cpp server.cpp)
